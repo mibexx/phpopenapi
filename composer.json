@@ -1,0 +1,25 @@
+{
+  "name": "mibexx/phpopenapi",
+  "type": "library",
+  "description": "PHP project for OpenAPI processing",
+  "require": {
+    "php": "^8.0",
+    "symfony/yaml": "^5.0",
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mibexx\\PHPOpenApi\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Mibexx\\PHPOpenApi\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "test": "phpunit"
+  }
+}
