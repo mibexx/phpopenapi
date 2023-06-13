@@ -19,7 +19,7 @@ class OpenAPIProcessorTest extends TestCase
 
     public function testProcess(): void
     {
-        $source = __DIR__ . '/../../../example/openapi.yaml';
+        $source = __DIR__ . '/../../example/openapi.yaml';
         $openapiDto = $this->openAPIProcessor->process($source);
 
         $this->assertInstanceOf(OpenAPIDto::class, $openapiDto);
